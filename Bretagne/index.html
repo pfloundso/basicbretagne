@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bretagne</title>
+    <style>
+        html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden; 
+        position: relative;
+        }
+
+        #fixedTopImage {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        width: 80%;
+        max-width: 600px; /* z.B. eine maximale feste Breite */
+        height: auto;
+        pointer-events: none;
+        filter: opacity(20%);
+
+        }
+  </style>
+</head>
+<body>
+    <img id="fixedTopImage" src="images/hinweis.png" alt="Top Image">
+
+
+    <!-- Interact.js lokal -->
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

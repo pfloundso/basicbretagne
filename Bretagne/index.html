@@ -12,6 +12,11 @@
         position: relative;
         }
 
+        body {
+            background-image: url('Image (1).png');
+            background-size: cover;
+        }
+
         #fixedTopImage {
         position: fixed;
         top: 10px;
@@ -25,11 +30,29 @@
         filter: opacity(20%);
 
         }
+
+       .movable {
+
+       }
+
+        .area {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            left: 0;
+            right: 0;
+            bottom: 23px;
+            margin: auto;
+            border-radius: 100px;
+            border: solid 1px black;
+            background-image: url('Image.png');
+            background-size: cover;
+        }
   </style>
 </head>
 <body>
     <img id="fixedTopImage" src="images/hinweis.png" alt="Top Image">
-
+    <div class="area"></div>
 
     <!-- Interact.js lokal -->
     <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
